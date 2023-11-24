@@ -37,6 +37,24 @@ class Algorithims{
     }
     
     func linearSearch(data: [Int], target: Int) -> Bool {
+        if data.count < 1{
+            return false
+        }
+        else{
+            for i in 0 ..< data.count{
+                if data[i] == target{
+                    return true
+                }
+                else{
+                    return false
+                }
+            }
+        }
+        return false
+    }
+    
+    func bubbleSort() {
         
     }
+    
 }
