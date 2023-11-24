@@ -53,8 +53,8 @@ class Algorithims{
         return false
     }
     
-    func bubbleSort() {
-        
+    func bubbleSort(data: [Int]) -> [Int] {
+        return [Int]()
     }
     
 }

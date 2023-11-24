@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D98AB1DF2B10B778008327DE /* AlgorithimsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98AB1DE2B10B778008327DE /* AlgorithimsTests.swift */; };
+		D98AB1E42B10B869008327DE /* utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02B57C32B10B1BB00C0EFB9 /* utility.swift */; };
 		F02B57BD2B10B18700C0EFB9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02B57BC2B10B18700C0EFB9 /* main.swift */; };
 		F02B57C42B10B1BB00C0EFB9 /* utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02B57C32B10B1BB00C0EFB9 /* utility.swift */; };
 /* End PBXBuildFile section */
@@ -24,12 +26,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D98AB1DC2B10B778008327DE /* AlgorithimsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithimsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98AB1DE2B10B778008327DE /* AlgorithimsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithimsTests.swift; sourceTree = "<group>"; };
 		F02B57B92B10B18700C0EFB9 /* Algorithims */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithims; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02B57BC2B10B18700C0EFB9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F02B57C32B10B1BB00C0EFB9 /* utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D98AB1D92B10B778008327DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F02B57B62B10B18700C0EFB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +51,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D98AB1DD2B10B778008327DE /* AlgorithimsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D98AB1DE2B10B778008327DE /* AlgorithimsTests.swift */,
+			);
+			path = AlgorithimsTests;
+			sourceTree = "<group>";
+		};
 		F02B57B02B10B18700C0EFB9 = {
 			isa = PBXGroup;
 			children = (
 				F02B57BB2B10B18700C0EFB9 /* Algorithims */,
+				D98AB1DD2B10B778008327DE /* AlgorithimsTests */,
 				F02B57BA2B10B18700C0EFB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				F02B57B92B10B18700C0EFB9 /* Algorithims */,
+				D98AB1DC2B10B778008327DE /* AlgorithimsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +89,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D98AB1DB2B10B778008327DE /* AlgorithimsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98AB1E02B10B778008327DE /* Build configuration list for PBXNativeTarget "AlgorithimsTests" */;
+			buildPhases = (
+				D98AB1D82B10B778008327DE /* Sources */,
+				D98AB1D92B10B778008327DE /* Frameworks */,
+				D98AB1DA2B10B778008327DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlgorithimsTests;
+			productName = AlgorithimsTests;
+			productReference = D98AB1DC2B10B778008327DE /* AlgorithimsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F02B57B82B10B18700C0EFB9 /* Algorithims */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F02B57C02B10B18700C0EFB9 /* Build configuration list for PBXNativeTarget "Algorithims" */;
@@ -92,9 +130,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					D98AB1DB2B10B778008327DE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					F02B57B82B10B18700C0EFB9 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -114,11 +155,31 @@
 			projectRoot = "";
 			targets = (
 				F02B57B82B10B18700C0EFB9 /* Algorithims */,
+				D98AB1DB2B10B778008327DE /* AlgorithimsTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D98AB1DA2B10B778008327DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		D98AB1D82B10B778008327DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98AB1E42B10B869008327DE /* utility.swift in Sources */,
+				D98AB1DF2B10B778008327DE /* AlgorithimsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F02B57B52B10B18700C0EFB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +192,48 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D98AB1E12B10B778008327DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eton.ezew.AlgorithimsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D98AB1E22B10B778008327DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eton.ezew.AlgorithimsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F02B57BE2B10B18700C0EFB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -253,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -262,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -270,6 +375,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D98AB1E02B10B778008327DE /* Build configuration list for PBXNativeTarget "AlgorithimsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98AB1E12B10B778008327DE /* Debug */,
+				D98AB1E22B10B778008327DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F02B57B42B10B18700C0EFB9 /* Build configuration list for PBXProject "Algorithims" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
