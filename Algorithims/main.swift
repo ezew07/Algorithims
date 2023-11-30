@@ -12,4 +12,4 @@ let data: [Int] = [23,54,23,12,98,9,22,-1,239]
 
 let eze = Algorithims()
 
-print(eze.mergeSort(data))
+print(eze.quickSort(data: data))

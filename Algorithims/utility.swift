@@ -8,33 +8,33 @@
 import Foundation
 
 class Algorithims{
-    func quickSort(data:[Int]) -> [Int]{
-        let pivot = data[0]
-        var left = [Int]()
-        var right = [Int]()
-        
-        for (i,v) in data.enumerated(){
-            if i != 0 {
-                if v <= pivot{
-                    left.append(v)
-                }
-                else {
-                    right.append(v)
-                }
-            }
-        }
-        var final = [Int]()
-        if left.count > 0 {
-            final.append(contentsOf: quickSort(data: left))
-        }
-        final.append(pivot)
-        
-        if right.count > 0 {
-            final.append(contentsOf: quickSort(data: right))
-        }
-        
-        return final
-    }
+//    func quickSort(data:[Int]) -> [Int]{
+//        let pivot = data[0]
+//        var left = [Int]()
+//        var right = [Int]()
+//        
+//        for (i,v) in data.enumerated(){
+//            if i != 0 {
+//                if v <= pivot{
+//                    left.append(v)
+//                }
+//                else {
+//                    right.append(v)
+//                }
+//            }
+//        }
+//        var final = [Int]()
+//        if left.count > 0 {
+//            final.append(contentsOf: quickSort(data: left))
+//        }
+//        final.append(pivot)
+//        
+//        if right.count > 0 {
+//            final.append(contentsOf: quickSort(data: right))
+//        }
+//        
+//        return final
+//    }
     
     func linearSearch(data: [Int], target: Int) -> Bool {
         if data.count < 1{
@@ -105,15 +105,15 @@ class Algorithims{
         return mutatedData
     }
     
-    func mergeSort(_ array: [Int]) -> [Int]{
+    func mergeSort(_ data: [Int]) -> [Int]{
         // 1
-        guard array.count > 1 else { return array }
+        guard data.count > 1 else { return data }
 
-        let middleIndex = array.count / 2
+        let midpoint = data.count / 2
 
         // 2
-        let leftArray = mergeSort(Array(array[0..<middleIndex]))
-        let rightArray = mergeSort(Array(array[middleIndex..<array.count]))
+        let leftArray = mergeSort(Array(data[0..<midpoint]))
+        let rightArray = mergeSort(Array(data[midpoint..<data.count]))
         
         return merge(leftArray, rightArray)
     }
@@ -150,7 +150,27 @@ class Algorithims{
             }
             
         }
-        
         return orderedArray
+    }
+    
+    func quickSort(data: [Int]) -> [Int]{
+        guard data.count > 1 else { return data }
+        
+        let pivot = data[0]
+        var greaterThanPivot: [Int] = []
+        var lessThanPivot: [Int] = []
+        
+        for i in 0..<data.count{
+            if i != 0{
+                if data[i] > pivot{
+                    greaterThanPivot.append(data[i])
+                }
+                else{
+                    lessThanPivot.append(data[i])
+                }
+            }
+        }
+        
+        return quickSort(data: lessThanPivot) + [pivot] + quickSort(data: greaterThanPivot)
     }
 }
