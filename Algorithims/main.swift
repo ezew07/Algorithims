@@ -8,8 +8,8 @@
 import Foundation
 
 
-let data: [Int] = [23,43,12,1,3,5,32,92]
+let data: [Int] = [23,54,23,12,98,9,22,-1,239]
 
 let eze = Algorithims()
 
-print(eze.quickSort(data: data))
+print(eze.mergeSort(data))
